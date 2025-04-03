@@ -27,6 +27,21 @@
 }
 
 .main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "article announcements"
+    "article trending";
+    gap: 2rem;
     grid-area: main;
     background-color: #f5f7f9;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
