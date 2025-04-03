@@ -35,8 +35,8 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "article announcements"
-    "article trending";
+    "projects announcements"
+    "projects trending";
     gap: var(--gap);
     grid-area: main;
     background-color: #f5f7f9;
@@ -45,6 +45,10 @@
 
 .announcements {
     grid-area: announcements;
+}
+
+.projects {
+    grid-area: projects;
 }
 
 .trending {
