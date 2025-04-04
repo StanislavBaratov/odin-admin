@@ -12,7 +12,7 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: clamp(100px, 30vw, 700px) 1fr;
     grid-template-rows: 20vh 1fr;
     grid-template-areas:
     "sidebar header"
@@ -63,7 +63,7 @@
 
 .favicon {
     display: grid;
-    width: 70%;
+    width: 80%;
     gap: 0.3rem;
     aspect-ratio: 1 / 1;
     grid-template-columns: 1fr 1fr;
@@ -97,8 +97,9 @@
 
 #caption {
     align-self: center;
-    font-size: 3rem;
+    font-size: clamp(10px, 3rem, 70px);
     font-weight: 900;
+    text-align: left;
 }
 
 .main-header {
