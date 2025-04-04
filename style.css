@@ -14,7 +14,7 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: clamp(100px, 30vw, 700px) 1fr;
+    grid-template-columns: clamp(100px, 25vw, 700px) 1fr;
     grid-template-rows: 20vh 1fr;
     grid-template-areas:
     "sidebar header"
