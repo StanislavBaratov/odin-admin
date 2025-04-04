@@ -13,7 +13,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 20vh 1fr;
     grid-template-areas:
     "sidebar header"
     "sidebar main";
@@ -109,7 +109,38 @@
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-rows: repeat(2, minmax(100px, 1fr));*/
     gap: var(--gap);
+}
+
+.card-buttons ul {
+    list-style: none;
+}
+
+.project-card {
+    border: 0.05rem solid #00000050;
+    border-radius: 0.5rem;
+    /*padding: 1rem;*/
+    box-sizing: border-box;
+    background-color: #ffc918;
+    box-shadow: 0.15rem 0.15rem 0.3rem 0.05rem #00000038;
+}
+
+
+.card-area {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    width: calc(100% - 0.5rem);
+    margin-left: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: clamp(3px, 1rem, 20px);
+    font-size: clamp(6px, 1rem, 30px);
+}
+
+.card-header {
+    font-weight: 900;
+    font-size: calc(clamp(6px, 1rem, 30px) * 1.2);
+    margin-bottom: 0.5rem;
 }
