@@ -34,7 +34,7 @@
 
 .main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "projects announcements"
@@ -173,6 +173,7 @@
 .nickname,
 .announcement-title {
     font-weight: 900;
+    font-size: var(--font-size-basis);
 }
 
 .announcement-item {
@@ -185,4 +186,5 @@
 
 .announce {
     margin-top: 1rem;
+    font-size: calc(var(--font-size-basis) * 0.75);
 }
