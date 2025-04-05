@@ -121,7 +121,7 @@
 }
 
 .project-card {
-    border: 0.05rem solid #00000050;
+    border: 0;
     border-radius: var(--card-border-radius);
     box-sizing: border-box;
     background-color: #ffc918;
@@ -180,9 +180,9 @@
 }
 
 .announcement-item + .announcement-item {
-    border-top: 2px solid #00000050;
+    border-top: 1px solid #00000050;
 }
 
 .announce {
-    margin-top: 30px;
+    margin-top: 1rem;
 }
