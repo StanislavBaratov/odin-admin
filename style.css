@@ -154,7 +154,7 @@
     box-shadow: 0.15rem 0.15rem 0.3rem 0.05rem #00000038;
 }
 
-.card > div + div {
+.card > .trending-item + .trending-item {
     margin-top: 2rem;
 }
 
@@ -170,6 +170,19 @@
     background-color: aqua;
 }
 
-.nickname {
+.nickname,
+.announcement-title {
     font-weight: 900;
+}
+
+.announcement-item {
+    padding: clamp(10px, 0.75rem, 30px);
+}
+
+.announcement-item + .announcement-item {
+    border-top: 2px solid #00000050;
+}
+
+.announce {
+    margin-top: 30px;
 }
