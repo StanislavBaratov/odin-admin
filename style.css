@@ -35,26 +35,23 @@
 .main {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "projects announcements"
-    "projects trending";
+    grid-template-areas: "projects aside";
     gap: var(--gap);
     grid-area: main;
     background-color: #f5f7f9;
     padding: var(--gap);
 }
 
-.announcements {
-    grid-area: announcements;
-}
-
 .projects {
     grid-area: projects;
 }
 
+.aside {
+    grid-area: aside;
+}
+
 .trending {
-    grid-area: trending;
+    margin-top: var(--gap);
 }
 
 .logo {
@@ -152,14 +149,17 @@
     background-color: #ffffff;
     padding: clamp(3px, 1rem, 20px);
     box-shadow: 0.15rem 0.15rem 0.3rem 0.05rem #00000038;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .card > .trending-item + .trending-item {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .trending-item {
     display: grid;
+    padding: clamp(10px, 0.75rem, 30px);
     grid-template-columns: 1fr 3fr;
 }
 
@@ -177,7 +177,7 @@
 }
 
 .announcement-item {
-    padding: clamp(10px, 0.75rem, 30px);
+    padding: 0.25rem;
 }
 
 .announcement-item + .announcement-item {
@@ -185,6 +185,6 @@
 }
 
 .announce {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: calc(var(--font-size-basis) * 0.75);
 }
