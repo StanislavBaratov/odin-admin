@@ -145,3 +145,31 @@
     font-size: calc(var(--font-size-basis) * 1.2);
     margin-bottom: 0.5rem;
 }
+
+.card {
+    border: 0;
+    border-radius: var(--card-border-radius);
+    background-color: #ffffff;
+    padding: clamp(3px, 1rem, 20px);
+    box-shadow: 0.15rem 0.15rem 0.3rem 0.05rem #00000038;
+}
+
+.card > div + div {
+    margin-top: 2rem;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 80%;
+    aspect-ratio: 1 /1;
+    background-color: aqua;
+}
+
+.nickname {
+    font-weight: 900;
+}
