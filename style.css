@@ -149,8 +149,6 @@
     background-color: #ffffff;
     padding: clamp(3px, 1rem, 20px);
     box-shadow: 0.15rem 0.15rem 0.3rem 0.05rem #00000038;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .card > .trending-item + .trending-item {
@@ -159,21 +157,29 @@
 
 .trending-item {
     display: grid;
-    padding: clamp(10px, 0.75rem, 30px);
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 30px 1fr;
+}
+
+.username {
+    padding: 0 1rem;
 }
 
 .avatar {
     border-radius: 50%;
-    width: 80%;
+    width: 100%;
     aspect-ratio: 1 /1;
     background-color: aqua;
+    align-self: center;
 }
 
 .nickname,
 .announcement-title {
     font-weight: 900;
     font-size: var(--font-size-basis);
+}
+
+.title {
+    font-size: calc(var(--font-size-basis) * 0.75);
 }
 
 .announcement-item {
