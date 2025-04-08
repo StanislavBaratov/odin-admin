@@ -236,7 +236,16 @@ ul {
 
 .navigation-icon {
     flex: 0 1 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-icon > img {
+    filter: invert();
     aspect-ratio: 1 / 1;
+    width: 75%;
+
 }
 
 li {
@@ -244,6 +253,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    gap: 1rem;
 }
 
 .search {
