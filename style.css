@@ -138,6 +138,16 @@ ul {
 
 .card-buttons ul {
     list-style: none;
+    padding: 3rem 1rem 1rem 3rem;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.card-buttons img {
+    width: 40px;
+    aspect-ratio: 1 / 1;
 }
 
 .project-card {
@@ -312,7 +322,7 @@ button {
 }
 
 .big-avatar {
-    flex: 0 1 30px;
+    flex: 0 1 60px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     background-color: #ffc918;
@@ -333,3 +343,18 @@ button {
     justify-content: flex-end;
     align-items: center;
 }
+
+.notifications,
+.search-icon {
+    flex: 0 0 30px;
+    aspect-ratio: 1 / 1;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex: 0 1 400px;
+}
+
